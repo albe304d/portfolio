@@ -1,3 +1,28 @@
+/*Generelt layout af siden*/
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 900px) 1fr;
+  column-gap: 1rem;
+}
+main section {
+  grid-column: 2/3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  margin-bottom: 1rem;
+}
+
 /*Stylang af nav/banner*/
 .banner {
   background: #5000ca22;
@@ -38,4 +63,33 @@ nav.shown {
 nav ul {
   display: flex;
   flex-flow: column;
+}
+
+header nav ul a {
+  font-family: "Karma", serif;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #000000;
+}
+
+nav a:hover {
+  color: #da6146;
+}
+
+/*Farverne og font family*/
+body {
+  background-color: #e2cecd;
+}
+
+h1 {
+  color: black;
+}
+
+h2,
+h3 {
+  color: #000000;
+}
+p,
+footer {
+  color: #000000;
 }
