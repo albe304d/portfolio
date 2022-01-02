@@ -2,9 +2,39 @@
   grid-column: 1/4;
   width: 100%;
   height: 100vh;
-  background-image: url(/img/blomst1.svg);
+  background-image: url(/img/blomster.svg);
   background-size: cover;
-  background-position: 45% 10%;
+  background-position: 50% 65%;
   display: grid;
   place-content: center;
+}
+
+#blomst1 {
+  width: 10rem;
+  aspect-ratio: 264.45/270.31;
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  background-image: url(/img/nr1.svg);
+  background-size: cover;
+}
+
+#blomst2 {
+  width: 8rem;
+  aspect-ratio: 273/260;
+  position: absolute;
+  top: 55%;
+  left: 77%;
+  background-image: url(/img/nr2.svg);
+  background-size: cover;
+}
+
+#blomst3 {
+  width: 9rem;
+  aspect-ratio: 148.39/146.62;
+  position: absolute;
+  top: 15%;
+  left: 60%;
+  background-image: url(/img/nr3.svg);
+  background-size: cover;
 }

@@ -99,7 +99,7 @@ footer {
   position: absolute;
   top: 8%;
   left: 2%;
-  background-image: url(img/luk.svg);
+  background-image: url(/img/luk.svg);
   background-size: cover;
 }
 
