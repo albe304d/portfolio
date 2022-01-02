@@ -25,13 +25,13 @@ section {
 
 /*Farverne, font family og fontsize*/
 body {
-  background-color: rgb(244, 225, 192);
+  background-color: rgb(246, 222, 216);
 }
 
 h1 {
   color: rgb(255, 109, 0);
   font-family: "Spicy Rice", cursive;
-  font-size: 4rem;
+  font-size: 4.5rem;
   text-align: center;
 }
 
@@ -76,14 +76,43 @@ footer {
   font-size: 1.5rem;
   color: rgb(255, 167, 215);
   padding: 0;
-  margin: 0;
+  margin-left: 0;
 }
 
 .banner nav a:hover {
   color: rgb(5, 108, 242);
 }
 
-/* burgermenu */
+/*Burgermenu ikoner og virkning*/
+#menu {
+  width: 7%;
+  aspect-ratio: 131/130;
+  position: absolute;
+  top: 10%;
+  left: 2%;
+  background-image: url(/img/burger.svg);
+  background-size: cover;
+}
+#luk {
+  width: 7%;
+  aspect-ratio: 131/130;
+  position: absolute;
+  top: 8%;
+  left: 2%;
+  background-image: url(img/luk.svg);
+  background-size: cover;
+}
+
+/*Til JAVA SCRIPT*/
+.hide {
+  display: none;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+/* burgermenus virkning */
 .toggle-btn {
   display: none;
 }
@@ -94,8 +123,6 @@ footer {
     display: block;
     min-width: 44px;
     min-height: 44px;
-    font-size: 1.1rem;
-    cursor: pointer;
   }
 
   nav {
@@ -103,8 +130,6 @@ footer {
   }
 
   nav.shown {
-    border-top: 1px solid #000;
-    padding-top: 1rem;
     display: flex;
     flex: 1 1 100%;
     flex-flow: column;
@@ -113,6 +138,7 @@ footer {
   nav ul {
     display: block;
     flex-flow: column;
+    margin-left: 1rem;
   }
 
   .banner {
@@ -139,6 +165,7 @@ button {
 button a {
   color: rgb(255, 167, 215);
   text-decoration: none;
+  font-family: "Libre Caslon Text", serif;
 }
 
 button:hover {
@@ -149,7 +176,7 @@ button:hover {
 @media (min-width: 600px) {
   /*Styling af overskrifter i tablet version*/
   h1 {
-    font-size: 4.5rem;
+    font-size: 6rem;
   }
 
   h2 {
@@ -178,7 +205,7 @@ button:hover {
 @media (min-width: 992px) {
   /*Styling af overskrifter i tablet version*/
   h1 {
-    font-size: 5.5rem;
+    font-size: 8rem;
   }
 
   h2 {
