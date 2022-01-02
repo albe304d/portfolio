@@ -38,3 +38,23 @@
   background-image: url(/img/nr3.svg);
   background-size: cover;
 }
+
+/*Blomster roterer _ SKAL DETTE GØRES I JS????*/
+#blomst1,
+#blomst2,
+#blomst3 {
+  animation-name: rotation_kf;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+@keyframes rotation_kf {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
