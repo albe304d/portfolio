@@ -7,42 +7,58 @@
   background-position: 50% 65%;
   display: grid;
   place-content: center;
+  z-index: -1;
 }
 
-#blomst1 {
-  width: 10rem;
-  aspect-ratio: 264.45/270.31;
+#blomster {
+  overflow: clip;
+  z-index: 0;
+}
+
+#gron_blomst_container {
   position: absolute;
+  aspect-ratio: 264.45/270.31;
+  width: 10rem;
   top: 70%;
   left: 5%;
+}
+#gron_blomst {
   background-image: url(/img/nr1.svg);
+  width: 100%;
+  height: 100%;
   background-size: cover;
 }
 
-#blomst2 {
-  width: 8rem;
-  aspect-ratio: 273/260;
+#bla_blomst_container {
   position: absolute;
+  aspect-ratio: 273/260;
+  width: 3rem;
   top: 55%;
   left: 77%;
+}
+#bla_blomst {
   background-image: url(/img/nr2.svg);
+  width: 100%;
+  height: 100%;
   background-size: cover;
 }
 
-#blomst3 {
-  width: 9rem;
-  aspect-ratio: 148.39/146.62;
+#lyserod_blomst_container {
   position: absolute;
+  aspect-ratio: 148.39/146.62;
+  width: 9rem;
   top: 15%;
   left: 60%;
+}
+#lyserod_blomst {
   background-image: url(/img/nr3.svg);
+  width: 100%;
+  height: 100%;
   background-size: cover;
 }
 
-/*Blomster roterer _ SKAL DETTE GØRES I JS????*/
-#blomst1,
-#blomst2,
-#blomst3 {
+/*Rotation class som sættes på blomsterne i JS*/
+.rotation {
   animation-name: rotation_kf;
   animation-duration: 10s;
   animation-iteration-count: infinite;
