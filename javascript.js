@@ -34,5 +34,10 @@ function menu() {
   document.querySelector("#luk").classList.add("hide");
 }
 
-/* Tilføj et klik-event til btn, der sætter toggleMenu-funktionen i gang */
+// Tilføj et klik-event til btn, der sætter toggleMenu-funktionen i gang
 btn.addEventListener("click", toggleMenu);
+
+//Sætter rotation classlist på blomster så de roterer
+document.querySelector("#gron_blomst").classList.add("rotation");
+document.querySelector("#bla_blomst").classList.add("rotation");
+document.querySelector("#lyserod_blomst").classList.add("rotation");

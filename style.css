@@ -33,6 +33,7 @@ h1 {
   font-family: "Spicy Rice", cursive;
   font-size: 4.5rem;
   text-align: center;
+  z-index: 1;
 }
 
 h2 {
@@ -57,6 +58,7 @@ footer {
 /*Stylang af nav/banner*/
 .banner {
   background: rgb(147, 146, 0);
+  z-index: 2;
 }
 
 .banner ul {
@@ -138,7 +140,7 @@ footer {
   nav ul {
     display: block;
     flex-flow: column;
-    margin-left: 1rem;
+    margin-left: 3.5rem;
   }
 
   .banner {
