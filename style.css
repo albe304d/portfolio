@@ -39,15 +39,23 @@ h1 {
 h2 {
   color: rgb(0, 186, 96);
   font-family: "Katibeh", cursive;
-  font-size: 2.5rem;
+  font-size: 3.2rem;
+  padding: 0;
+  margin-top: 2rem;
 }
 
-h3,
+h3 {
+  font-family: "Libre Caslon Display", serif;
+  color: rgb(5, 108, 242);
+  font-size: 1.6rem;
+}
+
 h4 {
   font-family: "Libre Caslon Display", serif;
   color: rgb(5, 108, 242);
   font-size: 1.1rem;
 }
+
 p,
 footer {
   font-family: "Libre Caslon Text", serif;
@@ -182,13 +190,17 @@ button:hover {
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
-  h3,
+  h3 {
+    font-size: 1.8rem;
+  }
+
   h4 {
     font-size: 1.3rem;
   }
+
   p,
   footer {
     font-size: 1rem;
@@ -211,13 +223,17 @@ button:hover {
   }
 
   h2 {
-    font-size: 3.3rem;
+    font-size: 4rem;
   }
 
-  h3,
+  h3 {
+    font-size: 2rem;
+  }
+
   h4 {
     font-size: 1.5rem;
   }
+
   p,
   footer {
     font-size: 1, 3rem;
@@ -231,4 +247,21 @@ button:hover {
   .banner ul a {
     font-size: 2rem;
   }
+}
+
+/*Styling af port.html*/
+
+#port img {
+  width: 10px;
+  height: 10px;
+  object-fit: cover;
+}
+
+#port #port_doku {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#port .col {
+  grid-column: 1/2;
 }
