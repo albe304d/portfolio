@@ -1,4 +1,4 @@
-/*Generelt layout af siden*/
+/*======Generelt layout af siden======*/
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
@@ -29,7 +29,7 @@ section {
   margin-bottom: 4rem;
 }
 
-/*Farverne, font family og fontsize*/
+/*=======Farverne, font family og fontsize======*/
 body {
   background-color: rgb(246, 222, 216);
 }
@@ -74,7 +74,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/*Stylang af nav/banner*/
+/*======Stylang af nav/banner======*/
 .banner {
   background: rgb(147, 146, 0);
   z-index: 2;
@@ -104,7 +104,7 @@ footer {
   color: rgb(5, 108, 242);
 }
 
-/*Burgermenu ikoner og virkning*/
+/*======Burgermenu ikoner og virkning======*/
 #menu {
   width: 7%;
   aspect-ratio: 131/130;
@@ -133,7 +133,7 @@ footer {
   transform: translateY(0);
 }
 
-/* burgermenus virkning */
+/*======burgermenus virkning======*/
 .toggle-btn {
   display: none;
 }
@@ -169,7 +169,7 @@ footer {
   }
 }
 
-/*Knapper*/
+/*======Knapper=======*/
 button {
   background-color: rgb(147, 146, 0);
   border: 2px solid rgb(255, 167, 215);
@@ -193,7 +193,7 @@ button:hover {
   background-color: rgb(5, 108, 242);
 }
 
-/*Media tablet version*/
+/*======Media tablet version======*/
 @media (min-width: 600px) {
   /*Styling af overskrifter i tablet version*/
   h1 {
@@ -228,7 +228,7 @@ button:hover {
   }
 }
 
-/*Media Web version*/
+/*======Media Web version======*/
 @media (min-width: 992px) {
   /*Styling af overskrifter i tablet version*/
   h1 {
@@ -252,7 +252,7 @@ button:hover {
     font-size: 1, 3rem;
   }
 
-  /*Stylang af nav/banner* for tablet*/
+  /*======Stylang af nav/banner* for tablet======*/
   .banner ul {
     display: flex;
   }
@@ -261,9 +261,103 @@ button:hover {
     font-size: 2rem;
   }
 }
-/*Styling af index.html*/
-/*Styling af ommig.html*/
-/*Styling af tema2.html*/
+/*======Styling af index.html======*/
+#hero_section {
+  grid-column: 1/4;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/img/blomster.svg);
+  background-size: cover;
+  background-position: 50% 65%;
+  display: grid;
+  /* place-content: center; */
+  z-index: -1;
+  position: relative;
+  overflow: hidden;
+  align-content: center;
+}
+
+#blomster {
+  z-index: 0;
+}
+
+#gron_blomst_container {
+  position: absolute;
+  aspect-ratio: 264.45/270.31;
+  width: 10rem;
+  top: 62%;
+  left: 5%;
+}
+#gron_blomst {
+  background-image: url(/img/nr1.svg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+#bla_blomst_container {
+  position: absolute;
+  aspect-ratio: 273/260;
+  width: 8rem;
+  top: 50%;
+  left: 77%;
+}
+#bla_blomst {
+  background-image: url(/img/nr2.svg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+#lyserod_blomst_container {
+  position: absolute;
+  aspect-ratio: 148.39/146.62;
+  width: 9rem;
+  top: 13%;
+  left: 60%;
+}
+#lyserod_blomst {
+  background-image: url(/img/nr3.svg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+/*Rotation class som sættes på blomsterne i JS*/
+.rotation {
+  animation-name: rotation_kf;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+@keyframes rotation_kf {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*
+
+
+
+*/
+/*======Styling af ommig.html======*/
+#om_first_section article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+#om_first_section p img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/*=======Styling af tema2.html=======*/
 #tema2_second_section .col {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -275,7 +369,7 @@ button:hover {
   object-fit: cover;
 }
 
-/*Styling af tema3.html*/
+/*======Styling af tema3.html======*/
 #tema3_second_section .col {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -300,7 +394,7 @@ button:hover {
 
 
 */
-/*Styling af tema4.html*/
+/*======Styling af tema4.html======*/
 #tema4_second_section .col {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -315,7 +409,7 @@ button:hover {
 
 
 */
-/*Styling af tema5.html*/
+/*======Styling af tema5.html======*/
 #tema5_second_section .col {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -336,7 +430,7 @@ button:hover {
   object-fit: cover;
 }
 
-/*Styling af port.html*/
+/*======Styling af port.html======*/
 /*Første section*/
 #port_first_section .col {
   display: grid;
