@@ -295,6 +295,11 @@ button:hover {
   object-fit: cover;
 }
 
+/*
+
+
+
+*/
 /*Styling af tema4.html*/
 #tema4_second_section .col {
   display: grid;
@@ -305,8 +310,31 @@ button:hover {
   height: 100%;
   object-fit: cover;
 }
-tema4_second_section
+/*
+
+
+
+*/
 /*Styling af tema5.html*/
+#tema5_second_section .col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+}
+#tema5_second_section img {
+  height: 100%;
+  object-fit: cover;
+}
+
+#tema5_third_section .col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+}
+#tema5_third_section img {
+  height: 100%;
+  object-fit: cover;
+}
 
 /*Styling af port.html*/
 /*Første section*/
