@@ -51,16 +51,16 @@ h2 {
 }
 
 h3 {
-  font-family: "Libre Caslon Display", serif;
-  color: rgb(5, 108, 242);
-  font-size: 1.6rem;
+  font-family: "Katibeh", cursive;
+  color: rgb(0, 186, 96);
+  font-size: 2rem;
   padding: 0;
   margin-top: 0.5rem;
 }
 
 h4 {
   font-family: "Libre Caslon Display", serif;
-  color: rgb(5, 108, 242);
+  color: rgb(0, 186, 96);
   font-size: 1.1rem;
   padding: 0;
   margin-top: 0.2rem;
@@ -72,6 +72,16 @@ footer {
   font-family: "Libre Caslon Text", serif;
   color: rgb(78, 65, 58);
   font-size: 0.9rem;
+}
+
+/*======styling af link til======*/
+.link a {
+  color: rgb(5, 108, 242);
+}
+
+.link a:hover {
+  color: rgb(0, 186, 96);
+  text-decoration: none;
 }
 
 /*======Stylang af nav/banner======*/
@@ -169,6 +179,13 @@ footer {
   }
 }
 
+/*======Footer=======*/
+footer p {
+  text-align: center;
+  padding: 0;
+  margin: 2rem;
+}
+
 /*======Knapper=======*/
 button {
   background-color: rgb(147, 146, 0);
@@ -206,7 +223,7 @@ button:hover {
   }
 
   h3 {
-    font-size: 1.8rem;
+    font-size: 2.3rem;
   }
 
   h4 {
@@ -240,7 +257,7 @@ button:hover {
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 2.6rem;
   }
 
   h4 {
