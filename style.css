@@ -11,6 +11,7 @@ main {
 }
 main section {
   grid-column: 2/3;
+  margin-bottom: 4rem;
 }
 
 img {
@@ -23,10 +24,6 @@ img {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-section {
-  margin-bottom: 4rem;
 }
 
 /*=======Farverne, font family og fontsize======*/
@@ -67,10 +64,14 @@ h4 {
   margin-bottom: 0.2rem;
 }
 
-p,
-footer {
+p {
   font-family: "Libre Caslon Text", serif;
   color: rgb(78, 65, 58);
+  font-size: 0.9rem;
+}
+footer p {
+  font-family: "Libre Caslon Text", serif;
+  color: rgb(255, 167, 215);
   font-size: 0.9rem;
 }
 
@@ -180,10 +181,12 @@ footer {
 }
 
 /*======Footer=======*/
-footer p {
+footer {
+  background-color: rgb(147, 146, 0);
+}
+#foot_first_section p {
   text-align: center;
   padding: 0;
-  margin: 2rem;
 }
 
 /*======Knapper=======*/
@@ -447,76 +450,76 @@ button:hover {
   object-fit: cover;
 }
 
-/*======Styling af port.html======*/
+/*======Styling af tema6.html======*/
 /*Første section*/
-#port_first_section .col {
+#tema6_first_section .col {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 1rem;
 }
-#port_first_section img {
+#tema6_first_section img {
   height: 100%;
   object-fit: cover;
 }
 /*Anden section*/
-/* #port_second_section .col {
+/* #tema6_second_section .col {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 1rem;
 }
 
-#port_second_section img {
+#tema6_second_section img {
   height: 100%;
   object-fit: cover;
 } */
 
 /*Tredje section*/
-#port_third_section {
+#tema6_third_section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2.5rem;
 }
-#port_third_section img {
+#tema6_third_section img {
   height: 100%;
   object-fit: cover;
 }
 
 /*Fjerde section*/
 /*col1*/
-#port_fourth_section .gron {
+#tema6_fourth_section .gron {
   aspect-ratio: 264.45/270.31;
 }
 
-#port_fourth_section .bla {
+#tema6_fourth_section .bla {
   aspect-ratio: 273/260;
 }
 
-#port_fourth_section .rod {
+#tema6_fourth_section .rod {
   aspect-ratio: 148.39/146.62;
 }
 
-#port_fourth_section .col1 {
+#tema6_fourth_section .col1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 2rem;
 }
 
-#port_fourth_section .col1 img {
+#tema6_fourth_section .col1 img {
   height: 100%;
   object-fit: cover;
 }
 /*col2*/
-#port_fourth_section .col2 .knap {
+#tema6_fourth_section .col2 .knap {
   aspect-ratio: 134/130;
 }
 
-#port_fourth_section .col2 {
+#tema6_fourth_section .col2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 2rem;
 }
 
-#port_fourth_section .col2 img {
+#tema6_fourth_section .col2 img {
   height: 100%;
   object-fit: cover;
 }
