@@ -71,11 +71,11 @@ p {
 }
 footer p {
   font-family: "Libre Caslon Text", serif;
-  color: rgb(255, 167, 215);
+  color: rgb(246, 222, 216);
   font-size: 0.9rem;
 }
 
-/*======styling af link til======*/
+/*======styling af link til opgaverne======*/
 .link a {
   color: rgb(5, 108, 242);
 }
@@ -86,12 +86,12 @@ footer p {
 }
 
 /*======Stylang af nav/banner======*/
-.banner {
-  background: rgb(147, 146, 0);
+#banner {
+  background: rgb(255, 109, 0);
   z-index: 2;
 }
 
-.banner ul {
+#banner ul {
   display: block;
   gap: 1.25rem;
   list-style-type: none;
@@ -102,34 +102,41 @@ footer p {
   margin-top: 0;
 }
 
-.banner ul a {
+#banner ul a {
   font-family: "Katibeh", cursive;
   text-decoration: none;
   font-size: 1.5rem;
-  color: rgb(255, 167, 215);
+  color: rgb(246, 222, 216);
+
   padding: 0;
   margin-left: 0;
 }
 
-.banner nav a:hover {
+#banner nav a:hover {
   color: rgb(5, 108, 242);
 }
 
-/*======Burgermenu ikoner og virkning======*/
+@media (max-width: 600px) {
+  #banner .nav2 {
+    display: none;
+  }
+}
+
+/*======Burgermenus ikoner (virking i js)======*/
 #menu {
-  width: 7%;
+  width: 2rem;
   aspect-ratio: 131/130;
   position: absolute;
-  top: 10%;
+  top: 14%;
   left: 2%;
   background-image: url(/img/burger.svg);
   background-size: cover;
 }
 #luk {
-  width: 7%;
+  width: 2rem;
   aspect-ratio: 131/130;
   position: absolute;
-  top: 8%;
+  top: 9%;
   left: 2%;
   background-image: url(/img/luk.svg);
   background-size: cover;
@@ -150,6 +157,7 @@ footer p {
 }
 @media (max-width: 600px) {
   .toggle-btn {
+    position: relative;
     background: transparent;
     border: none;
     display: block;
@@ -173,7 +181,7 @@ footer p {
     margin-left: 3.5rem;
   }
 
-  .banner {
+  #banner {
     display: flex;
     position: sticky;
     top: 0;
@@ -182,7 +190,7 @@ footer p {
 
 /*======Footer=======*/
 footer {
-  background-color: rgb(147, 146, 0);
+  background-color: rgb(255, 109, 0);
 }
 #foot_first_section p {
   text-align: center;
@@ -239,11 +247,11 @@ button:hover {
     font-size: 1rem;
   }
   /*Stylang af nav/banner* for tablet*/
-  .banner ul {
+  #banner ul {
     display: flex;
   }
 
-  .banner ul a {
+  #banner ul a {
     font-size: 1.8rem;
   }
 }
@@ -273,11 +281,11 @@ button:hover {
   }
 
   /*======Stylang af nav/banner* for tablet======*/
-  .banner ul {
+  #banner ul {
     display: flex;
   }
 
-  .banner ul a {
+  #banner ul a {
     font-size: 2rem;
   }
 }
