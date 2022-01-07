@@ -41,10 +41,9 @@ h1 {
 
 h2 {
   color: rgb(0, 186, 96);
-  font-family: "Katibeh", cursive;
-  font-size: 3.2rem;
+  font-family: "Spicy Rice", cursive;
+  font-size: 2.5rem;
   padding: 0;
-  margin-top: 1rem;
 }
 
 h3 {
@@ -91,6 +90,10 @@ footer p {
   z-index: 2;
 }
 
+#banner nav {
+  padding-top: 1rem;
+}
+
 #banner ul {
   display: block;
   gap: 1.25rem;
@@ -98,8 +101,6 @@ footer p {
   overflow-x: auto;
   place-content: center;
   flex-flow: wrap;
-  padding-top: 1rem;
-  margin-top: 0;
 }
 
 #banner ul a {
@@ -112,14 +113,18 @@ footer p {
   margin-left: 0;
 }
 
-#banner nav a:hover {
-  color: rgb(5, 108, 242);
-}
-
 @media (max-width: 600px) {
   #banner .nav2 {
     display: none;
   }
+}
+/*======hover effekt og */
+#banner li a:hover:not(.active) {
+  color: rgb(5, 108, 242);
+}
+
+#banner .active {
+  color: rgb(5, 108, 242);
 }
 
 /*======Burgermenus ikoner (virking i js)======*/
@@ -229,16 +234,15 @@ button:hover {
   }
 
   h2 {
-    font-size: 3.5rem;
-    margin-top: 2rem;
+    font-size: 3rem;
   }
 
   h3 {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 
   h4 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-top: 1rem;
   }
 
@@ -254,6 +258,10 @@ button:hover {
   #banner ul a {
     font-size: 1.8rem;
   }
+
+  #banner .nav2 ul a {
+    font-size: 1.5rem;
+  }
 }
 
 /*======Media Web version======*/
@@ -264,7 +272,7 @@ button:hover {
   }
 
   h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   h3 {
@@ -287,6 +295,9 @@ button:hover {
 
   #banner ul a {
     font-size: 2rem;
+  }
+  #banner .nav2 ul a {
+    font-size: 1.5rem;
   }
 }
 /*======Styling af index.html======*/

@@ -5,23 +5,20 @@ const nav = document.querySelector("nav");
 
 //Skjul luk, så den kun kommer frem når man trykker på burgermenu
 document.querySelector("#luk").classList.add("hide");
-// Lav en function, der hedder toggleMenu()
+
+//MED DISSE TO PUNKTER herunder KAN MAN KLIKKE LINJER FREM)
 function toggleMenu() {
-  // 1. Toggle en klasse på nav vha. classList.toggle
-  // 2. Toggle en klasse, der hedder "shown" (MED DISSE TO PUNKTER KAN MAN KLIKKE LINJER FREM)
   nav.classList.toggle("shown");
 
-  // 1. Lav en variabel, der hedder menuShown
-  // 2. Den skal være lig med, om nav-variablen indeholder klassen "shown" vha. classList.contains("")
+  //nav-variabel med klassen "shown"
   const menuShown = nav.classList.contains("shown");
 
-  // 1. Lav en if/else sætning => if (...) {...} else {...}
-  // 2. Spørg om menuShown i if-sætningen => if (menu)
+  //if/else
   if (menuShown) {
-    // hvis nav har klassen "shown", sæt da btn.textContent til "Luk"
+    // hvis nav har klassen "shown", så tilføjes "Luk"
     luk();
   } else {
-    // hvis IKKE nav har klassen "shown", sæt da btn.textContent til "Menu"
+    // hvis nav IKKE har klassen "shown", så tilføjes "Menu"
     menu();
   }
 }
