@@ -1,9 +1,4 @@
 /*======Generelt layout af siden======*/
-html {
-  scroll-behavior: smooth;
-  box-sizing: border-box;
-}
-
 main {
   display: grid;
   grid-template-columns: 1fr minmax(auto, 900px) 1fr;
@@ -29,6 +24,22 @@ img {
 /*=======Farverne, font family og fontsize======*/
 body {
   background-color: rgb(246, 222, 216);
+}
+#tema2_body {
+  background-color: rgb(0, 186, 96, 0.1);
+}
+#tema3_body {
+  background-color: rgb(255, 167, 215, 0.2);
+}
+#tema4_body {
+  background-color: rgb(5, 108, 242, 0.1);
+}
+
+#tema5_body {
+  background-color: rgba(255, 183, 0, 0.1);
+}
+#tema6_body {
+  background-color: rgba(0, 186, 96, 0.1);
 }
 
 h1 {
@@ -59,19 +70,21 @@ h4 {
   color: rgb(0, 186, 96);
   font-size: 1.1rem;
   padding: 0;
-  margin-top: 0.2rem;
-  margin-bottom: 0.2rem;
 }
 
 p {
   font-family: "Libre Caslon Text", serif;
   color: rgb(78, 65, 58);
   font-size: 0.9rem;
+  padding: 0;
+  margin-bottom: 1rem;
 }
 footer p {
   font-family: "Libre Caslon Text", serif;
   color: rgb(246, 222, 216);
   font-size: 0.9rem;
+  padding: 0;
+  margin: 0;
 }
 
 /*======styling af link til opgaverne======*/
@@ -83,7 +96,12 @@ footer p {
   color: rgb(0, 186, 96);
   text-decoration: none;
 }
+/*
 
+
+
+
+*/
 /*======Stylang af nav/banner======*/
 #banner {
   background: rgb(255, 109, 0);
@@ -118,7 +136,7 @@ footer p {
     display: none;
   }
 }
-/*======hover effekt og */
+/*======hover effekt og aktiv side*/
 #banner li a:hover:not(.active) {
   color: rgb(5, 108, 242);
 }
@@ -192,7 +210,12 @@ footer p {
     top: 0;
   }
 }
+/*
 
+
+
+
+*/
 /*======Footer=======*/
 footer {
   background-color: rgb(255, 109, 0);
@@ -201,19 +224,22 @@ footer {
   text-align: center;
   padding: 0;
 }
+/*
 
+
+
+
+*/
 /*======Knapper=======*/
-button a {
-  background: transparent;
+#index_first_section a {
   border: none;
   text-decoration: none;
 }
-button {
-  background: transparent;
-  border: none;
+#index_first_section h2:hover {
+  color: rgb(5, 108, 242);
 }
 
-button:hover {
+#port_first_section figure:hover {
   animation-name: pulse_kf;
   animation-duration: 1s;
   animation-iteration-count: 1;
@@ -223,17 +249,17 @@ button:hover {
 }
 @keyframes pulse_kf {
   0% {
-    transform: scale(100%);
+    transform: scale(1);
   }
 
   50% {
-    transform: scale(95%);
+    transform: scale(0.95);
   }
   100% {
-    transform: scale(100%);
+    transform: scale(1);
   }
 }
-/*Blomster image til button*/
+/*Blomster image til link*/
 #port_first_section {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -259,11 +285,15 @@ button:hover {
   grid-column: 1/2;
   grid-row: 5/7;
 }
-#port_first_section {
-  height: 100%;
-  object-fit: cover;
+#port_first_section img {
+  padding: 1rem;
 }
+/*
 
+
+
+
+*/
 /*======Media tablet version======*/
 @media (min-width: 600px) {
   /*Styling af overskrifter i tablet version*/
@@ -323,7 +353,7 @@ button:hover {
 
   p,
   footer {
-    font-size: 1, 3rem;
+    font-size: 1.3rem;
   }
 
   /*======Stylang af nav/banner* for tablet======*/
@@ -338,6 +368,12 @@ button:hover {
     font-size: 1.5rem;
   }
 }
+/*
+
+
+
+
+*/
 /*======Styling af index.html======*/
 #hero_section {
   grid-column: 1/4;
@@ -424,9 +460,11 @@ button:hover {
 }
 #index_first_section .omknap {
   grid-column: 1/2;
+  text-align: center;
 }
 #index_first_section .portknap {
   grid-column: 2/3;
+  text-align: center;
 }
 /*
 
@@ -444,7 +482,15 @@ button:hover {
   height: 100%;
   object-fit: cover;
 }
+#om_first_section img {
+  clip-path: circle(40% at 50% 50%);
+}
+/*
 
+
+
+
+*/
 /*=======Styling af tema2.html=======*/
 #tema2_second_section .col {
   display: grid;
@@ -456,7 +502,12 @@ button:hover {
   height: 100%;
   object-fit: cover;
 }
+/*
 
+
+
+
+*/
 /*======Styling af tema3.html======*/
 #tema3_second_section .col {
   display: grid;
@@ -517,7 +568,12 @@ button:hover {
   height: 100%;
   object-fit: cover;
 }
+/*
 
+
+
+
+*/
 /*======Styling af tema6.html======*/
 /*Første section*/
 #tema6_first_section .col {
@@ -548,46 +604,6 @@ button:hover {
   gap: 2.5rem;
 }
 #tema6_third_section img {
-  height: 100%;
-  object-fit: cover;
-}
-
-/*Fjerde section*/
-/*col1*/
-#tema6_fourth_section .gron {
-  aspect-ratio: 264.45/270.31;
-}
-
-#tema6_fourth_section .bla {
-  aspect-ratio: 273/260;
-}
-
-#tema6_fourth_section .rod {
-  aspect-ratio: 148.39/146.62;
-}
-
-#tema6_fourth_section .col1 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 2rem;
-}
-
-#tema6_fourth_section .col1 img {
-  height: 100%;
-  object-fit: cover;
-}
-/*col2*/
-#tema6_fourth_section .col2 .knap {
-  aspect-ratio: 134/130;
-}
-
-#tema6_fourth_section .col2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 2rem;
-}
-
-#tema6_fourth_section .col2 img {
   height: 100%;
   object-fit: cover;
 }
