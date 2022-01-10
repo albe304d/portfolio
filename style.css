@@ -165,23 +165,17 @@ footer p {
   background-size: cover;
 }
 
+/*======burgermenus virkning======*/
 /*Til JAVA SCRIPT*/
 .hide {
   display: none;
 }
-
-.showMenu {
-  transform: translateY(0);
-}
-
-/*======burgermenus virkning======*/
 .toggle-btn {
   display: none;
 }
 @media (max-width: 600px) {
   .toggle-btn {
     position: relative;
-    background: transparent;
     border: none;
     display: block;
     min-width: 44px;
