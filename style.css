@@ -479,6 +479,11 @@ footer {
 #om_first_section img {
   clip-path: circle(40% at 50% 50%);
 }
+#om_second_section video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 /*
 
 
