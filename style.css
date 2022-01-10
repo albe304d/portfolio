@@ -214,9 +214,9 @@ footer p {
 footer {
   background-color: rgb(255, 109, 0);
 }
-#foot_first_section p {
+footer p {
   text-align: center;
-  padding: 0;
+  padding: 1rem;
 }
 /*
 
