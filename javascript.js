@@ -1,6 +1,6 @@
-// Lav en variabel, der refererer til ".toggle-btn"
+//En konstant der refererer til ".toggle-btn"
 const btn = document.querySelector(".toggle-btn");
-// Lav en variabel, der refererer til "nav"
+//En konstant der refererer til "nav"
 const nav = document.querySelector("nav");
 
 //Skjul luk, så den kun kommer frem når man trykker på burgermenu
