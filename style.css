@@ -479,10 +479,24 @@ footer p {
 #om_first_section img {
   clip-path: circle(40% at 50% 50%);
 }
+
 #om_second_section video {
   width: 100%;
   height: auto;
   display: block;
+}
+
+#om_third_section article {
+  background-color: rgb(255, 181, 0);
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+}
+#om_third_section h4,
+h3 {
+  padding: 0;
+  margin: 0;
 }
 /*
 
@@ -585,16 +599,10 @@ footer p {
   object-fit: cover;
 }
 /*Anden section*/
-/* #tema6_second_section .col {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 1rem;
-}
-
 #tema6_second_section img {
   height: 100%;
   object-fit: cover;
-} */
+}
 
 /*Tredje section*/
 #tema6_third_section {
