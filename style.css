@@ -614,7 +614,7 @@ h3 {
 #tema6_third_section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2.5rem;
+  gap: 1rem;
 }
 #tema6_third_section col {
   height: 100%;
